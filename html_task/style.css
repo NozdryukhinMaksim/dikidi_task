@@ -1,0 +1,126 @@
+body {
+    background: #585e6a;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.auth-wrapper {
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.auth-box {
+    background: #dde6e8;
+    padding: 20px 25px;
+    box-shadow: 0 2px 20px 10px rgb(0 0 0 / 45%);
+    border: 8px solid #606672;
+    border-radius: 25px;
+}
+
+.auth-title {
+    color: #333333;
+    margin: 0;
+    font-weight: normal;
+}
+
+.auth-subtitle {
+    color: #505050;
+    margin-top: 5px;
+}
+
+.form-control {
+    height: 45px;
+    border-radius: 10px;
+    box-shadow: inset 0 2px 5px 0 rgb(0 0 0 / 18%);
+    border: 1px solid #9ca2a6;
+    transition: 0.3s;
+}
+
+.form-control:active, .form-control:focus {
+    box-shadow: inset 0 3px 8px 0 rgb(0 0 0 / 30%);
+    transition: 0.3s;
+}
+
+.btn-success {
+    position: absolute;
+    width: fit-content;
+    right: 7px;
+    bottom: 7px;
+    padding: 0 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.position-relative {
+    position: relative;
+}
+
+.checkbox-container {
+    display: block;
+    position: relative;
+    padding-left: 25px;
+    cursor: auto;
+    user-select: none;
+    width: fit-content;
+}
+
+.checkbox-container input {
+    display: none;
+}
+
+.checkbox-container label {
+    margin: 0;
+    font-weight: normal;
+    font-size: 12px;
+}
+
+.checkbox-container .checkmark {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    height: 18px;
+    width: 18px;
+    background-color: #eee;
+    border-radius: 5px;
+    border: 1px solid #9ca2a6;
+    box-shadow: inset -2px -4px 5px 1px rgba(0, 0, 0, .075);
+    transition: 0.3s;
+}
+
+.checkbox-container:hover input ~ .checkmark {
+    background-color: #ccc;
+    transition: 0.3s
+}
+
+.checkbox-container input:checked ~ .checkmark {
+    background-image: linear-gradient(to bottom, #5cb85c 0, #419641 100%);
+    border: 1px solid #419641;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.checkbox-container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.checkbox-container .checkmark:after {
+    left: 5px;
+    top: 2px;
+    width: 6px;
+    height: 9px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+.forgot-password {
+    margin-top: 15px;
+}
